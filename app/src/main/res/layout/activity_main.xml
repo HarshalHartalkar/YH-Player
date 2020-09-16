@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/Black">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:orientation="vertical">
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColorHint="#000000"
+           >
+
+           <androidx.appcompat.widget.AppCompatEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Song Title"
+               android:id="@+id/songtitle"
+               android:textColor="@color/White"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="10dp"
+           >
+       </View>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Select Song"
+               android:onClick="openAudioFile"
+               android:textSize="16sp"
+
+               />
+
+           <TextView
+               android:id="@+id/txtviewsongfileselected"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="10dp"
+               android:layout_marginLeft="10dp"
+               android:gravity="center"
+               android:textColor="@color/White"
+               android:text="No File Selected" />
+
+
+
+       </LinearLayout>
+
+       <ProgressBar
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+           android:id="@+id/progressbar"
+           android:layout_marginTop="10dp"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Upload"
+          android:onClick="UploadAudioToFirebase"
+          android:textStyle="bold"/>
+
+
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Songs"
+        android:onClick="openSongsActivity"/>
+
+</LinearLayout>
+
+
+

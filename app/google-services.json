@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "789520945605",
+    "firebase_url": "https://yh-player.firebaseio.com",
+    "project_id": "yh-player",
+    "storage_bucket": "yh-player.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789520945605:android:8e11053c36f9bd74",
+        "android_client_info": {
+          "package_name": "com.example.yhplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789520945605-ngtso1n2rf74vv0iplq794fjgp6c9fk2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa1CKO5mVo5YNw0RQFJ5NCFQ6pVVya5f8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789520945605-ngtso1n2rf74vv0iplq794fjgp6c9fk2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
